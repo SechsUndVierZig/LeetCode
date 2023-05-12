@@ -1,6 +1,6 @@
 ﻿using System;
 
-public class ThirdAssignment
+public class FourthAssignment
 {
     public class Solution3
     {
