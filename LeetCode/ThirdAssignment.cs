@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 public class ThirdAssignment
 {
-    public class Solution4
+    public class Solution3
     {
         public int LengthOfLongestSubstring(string s)
         {

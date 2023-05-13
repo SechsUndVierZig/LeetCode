@@ -2,7 +2,7 @@
 
 public class FourthAssignment
 {
-    public class Solution3
+    public class Solution4
     {
         public double FindMedianSortedArrays(int[] nums1, int[] nums2)
         {
