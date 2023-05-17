@@ -7,7 +7,8 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-
+            var score = 50;
+            Console.WriteLine(score > 40 ? "You're pass" : "You're fail");
         }
     }
 }
