@@ -29,7 +29,6 @@ public class Assignment72
                 prevRow = curRow;
             }
 
-            // return dp[m, n];
             return prevRow[n];
 
             int Min(params int[] arr)
