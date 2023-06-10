@@ -11,7 +11,7 @@ public class Assignment18
 
             Array.Sort(nums);
             if (nums != null && nums[0] > 0 && nums[0] > target) return result;
-  
+
             for (int i = 0; i < nums.Length - 3; i++)
             {
                 while (i > 0 && i <= nums.Length - 3 && nums[i] == nums[i - 1])
@@ -54,3 +54,4 @@ public class Assignment18
 
         }
     }
+}
