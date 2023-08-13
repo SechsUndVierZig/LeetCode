@@ -3,25 +3,26 @@ using System.Collections.Generic;
 public class Assignment216
 {
 
-public class Solution
-{
-    public IList<IList<int>> CombinationSum3(int k, int n)
+    public class Solution
     {
-        List<IList<int>> results = new();
-        Stack<int> stack = new();
-        FindSum(1, k, n);
-        return results;
-
-        void FindSum(int startingValue, int numberOfNumbers, int targetSum)
+        public IList<IList<int>> CombinationSum3(int k, int n)
         {
-            if (targetSum is 0 && numberOfNumbers is 0) results.Add(stack.ToArray());
-            if (targetSum is 0 || numberOfNumbers is 0) return;
+            List<IList<int>> results = new();
+            Stack<int> stack = new();
+            FindSum(1, k, n);
+            return results;
 
-            for (int value = startingValue; value < 10; value++)
+            void FindSum(int startingValue, int numberOfNumbers, int targetSum)
             {
-                stack.Push(value);
-                FindSum(value + 1, numberOfNumbers - 1, targetSum - value);
-                stack.Pop();
+                if (targetSum is 0 && numberOfNumbers is 0) results.Add(stack.ToArray());
+                if (targetSum is 0 || numberOfNumbers is 0) return;
+
+                for (int value = startingValue; value < 10; value++)
+                {
+                    stack.Push(value);
+                    FindSum(value + 1, numberOfNumbers - 1, targetSum - value);
+                    stack.Pop();
+                }
             }
         }
     }
