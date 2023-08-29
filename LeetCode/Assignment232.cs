@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-public class Assignment232
+public class Assignment232  
 {
     public class MyQueue
     {
